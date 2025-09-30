@@ -1,0 +1,23 @@
+run_id: default
+
+targets:
+  homepage_ms: 485
+  docs_ms: 424
+
+endpoints:
+  - {name: Main_Site, url: "https://decentro.tech"}
+  - {name: Documentation, url: "https://docs.decentro.tech"}
+  - {name: API_Overview, url: "https://docs.decentro.tech/docs/overview"}
+  - {name: API_Basics, url: "https://docs.decentro.tech/docs/api-basics"}
+  - {name: About_Page, url: "https://decentro.tech/about"}
+  - {name: Products_Page, url: "https://decentro.tech/products"}
+
+collect:
+  samples: 3         # how many pings per endpoint
+  sleep_seconds: 2   # spacing between requests
+  timeout_seconds: 10
+
+paths:
+  raw_dir: "data/raw"
+  results_dir: "data/results"
+  processed_dir: "data/processed"
